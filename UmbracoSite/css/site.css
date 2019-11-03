@@ -87,50 +87,23 @@ textarea {
     font-size:20px;
 }
 
-
-
-.board {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-}
-
-.sendmessage {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.contactinfo {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-end;
-}
-
 .contactinfo-bg {
     background-color: #ffaa23;
-    height:590px;
-    color:#ffffff;
+    color: #ffffff;
+    width: calc(100% + 150px);
+    margin-left: -150px;
 }
 
 .pngcolor-orange {
     filter: opacity(.5) drop-shadow(0 0 0 #ffaa23);
 }
-
 p{
     font-size:18px;
 }
-
 .socialmediaimg {
     height: 35px;
     width: 35px;
 }
-
-
 .a-decoration-non{
     text-decoration:none;
     color:#ffffff
