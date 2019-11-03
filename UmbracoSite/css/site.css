@@ -1,0 +1,141 @@
+.navbaritems-custom {
+    font-size: 20px;
+}
+
+.nav-link-custome{
+    color: #000000;
+}
+
+.nav-link-custome:hover {
+        color: #848d26;
+        Text-Decoration: none
+}
+
+.tekst-center {
+    text-align: center;
+}
+
+.textcolor-orange {
+    color: #ffaa23;
+}
+
+
+textcolor-orange h3 img {
+    background-color: red;
+}
+
+body {
+    background-image: url('../../../Media/la0hkbuh/download-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #eeeeee;
+}
+
+
+.button-1 {
+    background-color: #ffaa23;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color:#ffffff;
+}
+
+.button-2 {
+    border-radius: 50px;
+    border: solid 2px;
+    border-color: #ffaa23;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffaa23;
+}
+
+.background-white {
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+
+.border-black{
+    border:solid 1px;    
+    border-color:black;
+    background-color:#ffffff;
+}
+
+.content-height{
+    height:600px;
+}
+
+.message-area{
+    background-color:#ffffff;
+}
+
+.footerbackground{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+textarea {
+    resize: none;
+    background-color:#eeeeee;
+    font-size:20px;
+}
+
+
+
+.board {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.sendmessage {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contactinfo {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.contactinfo-bg {
+    background-color: #ffaa23;
+    height:590px;
+    color:#ffffff;
+}
+
+.pngcolor-orange {
+    filter: opacity(.5) drop-shadow(0 0 0 #ffaa23);
+}
+
+p{
+    font-size:18px;
+}
+
+.socialmediaimg {
+    height: 35px;
+    width: 35px;
+}
+
+
+.a-decoration-non{
+    text-decoration:none;
+    color:#ffffff
+}
+.a-decoration-non:hover {
+    text-decoration: none;
+    color: #ffffff
+}

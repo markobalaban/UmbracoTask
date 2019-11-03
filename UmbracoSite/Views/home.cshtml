@@ -1,0 +1,124 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Home>
+@{
+    Layout = "master.cshtml";
+}
+
+@* the fun starts here *@
+
+<div class="row">
+    <div class="col-12 justify-content-center">
+        <div class="tekst-center my-5">
+            <h1>@Model.Title</h1>
+            <h1>@Model.Subtitle</h1>
+        </div>
+        <div class="tekst-center my-5">
+            <h2>@Model.Subtitle2</h2>
+        </div>
+        <div class="tekst-center my-5">
+            <button class="button-1" type="button">TA REDA PÅ MER</button>
+        </div>
+    </div>
+</div>
+@Html.GetGridHtml(Model, "mainContent")
+
+@*<div class="container">
+        <div class="row mt-5"">
+            <div class="col-10">
+                <div class="message-area p-5">
+                    <h2 class="pl-4">send us a message</h2>
+                    </br>
+                    <textarea rows="1" cols="50"></textarea>
+                    </br>
+                    <textarea rows="1" cols="50"></textarea>
+                    </br>
+                    <textarea rows="15" cols="50"></textarea>
+                    <div class="my-5">
+                        <button class="button-1" type="button">send message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="justify-content: flex-end;">
+                <h2>monsefi marketing</h2>
+                <p>
+                    lorem ipsum dolor sit met consecteuer
+                    adipiscing lorem ipusm dolor sit met
+                </p>
+            </div>
+        </div>
+    </div>*@
+<div class="container">
+    <div class="board mt-5">
+        <div class="row sendmessage">
+            <div class="col-10 ">
+                <div class="message-area p-5">
+                    <h2 class="pl-4">send us a message</h2>
+                    </br>
+                    <textarea rows="1" cols="50"></textarea>
+                    </br>
+                    <textarea rows="1" cols="50"></textarea>
+                    </br>
+                    <textarea rows="11" cols="50"></textarea>
+                    <div class="my-5">
+                        <button class="button-1" type="button">send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row contactinfo">
+            <div class="col-6 mt-5 pt-5 contactinfo-bg">
+                <div class="mx-5">
+                    <h2>MONSEFI MARKETING</h2>
+                    <p>
+                        lorem ipsum dolor sit met consecteuer
+                        adipiscing lorem ipusm dolor sit met
+                    </p>
+                </div>
+                <div class="m-5">
+                    <div class="row my-4">
+                        <div class="col-2">
+                            <a class="a-decoration-non" href="tel:@Model.Facebook" target="_blank">
+                                <img class="socialmediaimg" src="~/Media/d0aojynh/phone.png" />
+                            </a>
+                        </div>
+                        <div class="col-10">
+                            @Model.Phone
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-2">
+                            <a class="a-decoration-non" href="#">
+                                <img class="socialmediaimg" src="~/Media/smudmy1x/location.png" />
+                            </a>
+                        </div>
+                        <div class="col-10">
+                            @Model.Address
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-2">
+                            <a class="a-decoration-non" href="mailto:@Model.Email" target="_blank">
+                                <img class="socialmediaimg" src="~/Media/fudbk5vq/mail.png" />
+                            </a>
+                        </div>
+                        <div class="col-10">
+                            @Model.Email
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <h3>FOLLOW</h3>
+                    <a href="@Model.Facebook" target="_blank">
+                        <img class="socialmediaimg" src="~/Media/fsyhxuel/facebook-2.png" />
+                    </a>
+                    <a href="@Model.Twitter" target="_blank">
+                        <img class="socialmediaimg" src="~/Media/x2ibs5cg/twitter-2.png" />
+                    </a>
+                    <a href="@Model.Instagram" target="_blank">
+                        <img class="socialmediaimg" src="~/Media/3uwmyxdt/instagram-2.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
