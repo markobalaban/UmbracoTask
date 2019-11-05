@@ -5,23 +5,30 @@
 
 @* the fun starts here *@
 
-<div class="row">
-    <div class="col-12 justify-content-center">
-        <div class="tekst-center my-5">
-            <h1>@Model.Title</h1>
-            <h1>@Model.Subtitle</h1>
-        </div>
-        <div class="tekst-center my-5">
-            <h2>@Model.Subtitle2</h2>
-        </div>
-        <div class="tekst-center my-5">
-            <button class="button-1" type="button">TA REDA PÅ MER</button>
+  
+<div class="background-1">
+        <img src="~/Media/tf5nv1o5/screenshot-2019-10-15-at-13-11-31.png" />
+</div>
+<div class="">
+    <div class="row">
+        <div class="col-12 justify-content-center text-white">
+            <div class="tekst-center" style="margin-top:97px;">
+                <h1>@Model.Title</h1>
+                <h1 class="textcolor-orange">@Model.Subtitle</h1>
+            </div>
+            <div class="tekst-center my-5">
+                <h2>@Model.Subtitle2</h2>
+            </div>
+            <div class="tekst-center my-5">
+                <button class="button-1" type="button">TA REDA PÅ MER</button>
+            </div>
         </div>
     </div>
 </div>
+
 @Html.GetGridHtml(Model, "mainContent")
 
-<div class="container">
+<div class="container">    
     <div class="row">
         <div class="col-12 col-md-8 border message-area">
             <div class="row ">
