@@ -184,19 +184,7 @@ textarea {
 }
 
 
-@media (max-width: 992px) {
-    .content-height {
-        height: auto;
-    }
-
-    .contactinfo-bg {
-        background-color: #D9A200;
-        color: #ffffff;
-        width: 100%;
-        margin-left: 0px;
-        position: relative;
-        bottom: 30px;
-    }
+@media (max-width: 992px) {    
 
     .background-1 {
         position: inherit ;
@@ -218,5 +206,18 @@ textarea {
 
     h2 {
         font-size: 1.7rem;
+    }
+
+    .content-height {
+        height: auto;
+    }
+
+    .contactinfo-bg {
+        background-color: #D9A200;
+        color: #ffffff;
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+        bottom: 30px;
     }
 }
