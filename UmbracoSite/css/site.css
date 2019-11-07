@@ -139,30 +139,23 @@ textarea {
     left: 15px;
 }
 
-.black-line-first::before {
-    display: block;
-    content: '';
-    width: 70%;
-    height: 15px;
-    background: #000000;
-    position: absolute;
-    bottom: 300px;
-    left: 15px;
-}
 
 .background-1 {
     position: absolute;
 }
 
-    .background-1 img {
+    .background-1 video {
         width: calc(100% - 15px);
         max-height: 760px;
+
     }
 .background-2 {
     background-position: top;
     background-size: contain;
     background: no-repeat;
-    height: 500px;
+    background-position-x: center;
+    background-position-y: center;
+    height: 600px;
 }
 
 .linesize h2 {
@@ -183,19 +176,39 @@ textarea {
    margin-top:97px;
 }
 
+@media (max-width: 1200px){
+    .test p {
+        font-size: 12px;
+    }
+}
 
-@media (max-width: 992px) {    
+@media (max-width: 992px) {
 
-    .background-1 {
-        position: inherit ;
+
+    .background-1 video {
+        width: 100%;
+        max-height: 760px;
     }
 
-        .background-1 img {
-            width: 100%;
-            max-height: 760px;
-        }
     .margin-header {
-        margin-top:0px;
+        margin-top: 45px;
+    }
+
+    .test p {
+        font-size: 9px;
+    }
+    .black-line {
+        width: 60%;
+    }
+
+    .white-line::before{
+        width: 60%;
+    }
+
+}
+@media (max-width: 760px) {
+    .test p {
+        font-size: 16px;
     }
 }
 
@@ -219,5 +232,22 @@ textarea {
         margin-left: 0px;
         position: relative;
         bottom: 30px;
+    }
+
+    .button-1 {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+    .button-2 {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+
+    .black-line {
+        width: 50%;
+    }
+
+    .white-line::before {
+        width: 50%;
     }
 }

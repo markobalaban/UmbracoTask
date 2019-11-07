@@ -5,22 +5,26 @@
 
 @* the fun starts here *@
 
-  
-<div class="background-1">
-        <img src="~/Media/tf5nv1o5/screenshot-2019-10-15-at-13-11-31.png"/>
+<div class="row">
+    <div class="col-12 background-1">
+        <video autoplay loop muted>
+            <source src="~/Media/vokp1gyp/app.mp4" type="video/mp4" />
+        </video>
+    </div>
 </div>
+
 <div id="omOss">
     <div class="row">
         <div class="col-12 justify-content-center text-white">
             <div class="tekst-center margin-header">
-                <h1>@Model.Title</h1>
-                <h1 class="textcolor-orange">@Model.Subtitle</h1>
+                <h2>@Model.Title</h2>
+                <h2 class="textcolor-orange">@Model.Subtitle</h2>
             </div>
-            <div class="tekst-center my-5">
-                <h2>@Model.Subtitle2</h2>
+            <div class="tekst-center my-md-5 my-0">
+                <h4>@Model.Subtitle2</h4>
             </div>
-            <div class="tekst-center my-5">
-                <button class="button-1" type="button">TA REDA PÅ MER</button>
+            <div class="tekst-center my-md-5 my-0">
+                <button class="button-1" type="button" onclick="window.location.href='#kontakt'">TA REDA PÅ MER</button>
             </div>
         </div>
     </div>
@@ -28,7 +32,7 @@
 
 @Html.GetGridHtml(Model, "mainContent")
 
-<div class="container">    
+<div class="container">
     <div class="row">
         <div class="col-12 col-md-8 border message-area">
             <div class="row ">
@@ -42,7 +46,7 @@
                         </br>
                         <textarea rows="11" cols="50" class="form-control"></textarea>
                         <div class="my-5">
-                            <button class="button-1" type="button">send message</button>
+                            <button class="button-1" type="button">SEND MESSAGE</button>
                         </div>
                     </div>
                 </div>
