@@ -22,7 +22,7 @@ namespace UmbracoSite.Controllers
             {
                 SendEmail(model);
                 TempData["ContactSuccess"] = true;
-                return RedirectToCurrentUmbracoPage();
+                return CurrentUmbracoPage();
             }
 
             return CurrentUmbracoPage();
@@ -30,8 +30,8 @@ namespace UmbracoSite.Controllers
 
         private void SendEmail(ContactModel model)
         {
-            MailMessage message = new MailMessage(model.EmailAddress, "website@installumbraco.web.local");
-            message.Subject = string.Format("Enquiry from {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);
+            MailMessage message = new MailMessage(model.EmailAddress, "marko2@teol.net");
+            message.Subject = string.Format("Enquiry from {0} - {1}", model.Subject, model.EmailAddress);
             message.Body = model.Message;
             SmtpClient client = new SmtpClient("127.0.0.1", 25);
             client.Send(message);

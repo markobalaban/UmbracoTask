@@ -38,26 +38,16 @@
             <div class="row ">
                 <div class="col-12 col-md-10">
                     <div class="container">
-                        @if (TempData["ContactSuccess"] != null && (bool)TempData["ContactSuccess"])
-                        {
-                            <p>Your message was sent successfully</p>
-                        }
-                        else
-                        {
-                            Html.RenderAction("RenderForm", "ContactSurface");
-                        }
-                        @*<div class="p-5">
-            <h2 class="pl-4">SEND US A MESSAGE</h2>
-            </br>
-            <textarea rows="1" cols="50" class="form-control"></textarea>
-            </br>
-            <textarea rows="1" cols="50" class="form-control"></textarea>
-            </br>
-            <textarea rows="11" cols="50" class="form-control"></textarea>
-            <div class="my-5">
-                <button class="button-1" type="button">SEND MESSAGE</button>
-            </div>
-        </div>*@
+                        <div class="p-5">
+                            @if (TempData["ContactSuccess"] != null && (bool)TempData["ContactSuccess"])
+                            {
+                                <p>Your message was sent successfully</p>
+                            }
+                            else
+                            {
+                                Html.RenderAction("RenderForm", "ContactSurface");
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
