@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using UmbracoSite.Models;
 using System.Net.Mail;
+using System.Net;
 
 namespace UmbracoSite.Controllers
 {
@@ -31,9 +32,20 @@ namespace UmbracoSite.Controllers
         private void SendEmail(ContactModel model)
         {
             MailMessage message = new MailMessage(model.EmailAddress, "marko2@teol.net");
-            message.Subject = string.Format("Enquiry from {0} - {1}", model.Subject, model.EmailAddress);
+            message.Subject = string.Format(" {0} - Recived from: {1}", model.Subject, model.EmailAddress);
             message.Body = model.Message;
-            SmtpClient client = new SmtpClient("127.0.0.1", 25);
+            SmtpClient client = new SmtpClient();
+            client.Host = "smtp.gmail.com";
+            client.Port = 587;
+            client.EnableSsl = true;
+
+            var credential = new NetworkCredential
+            {                
+                UserName = "e-mailAddress",
+                Password = "sifra"
+            };
+
+            client.Credentials = credential;
             client.Send(message);
         }
     }
