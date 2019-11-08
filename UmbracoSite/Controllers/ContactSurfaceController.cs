@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using UmbracoSite.Models;
 using System.Net.Mail;
 using System.Net;
+using System;
 
 namespace UmbracoSite.Controllers
 {
@@ -46,7 +47,11 @@ namespace UmbracoSite.Controllers
             };
 
             client.Credentials = credential;
-            client.Send(message);
+
+            try { 
+                client.Send(message);
+            }
+            catch(Exception){}            
         }
     }
 }
