@@ -141,8 +141,7 @@ textarea {
 }
 
     .background-1 video {
-        width: calc(100% - 15px);
-        max-height: 760px;
+        width: 100%
 
     }
 .background-2 {
